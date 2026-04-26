@@ -1,0 +1,39 @@
+
+
+main{
+    background: var(--main-bg);
+    border-top: 2px solid var(--main-border);
+    padding-top: 5rem;
+}
+
+nav{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-auto-rows: auto;
+    gap: 3rem;
+}
+
+nav > a {
+    will-change: background-position;
+    width: 10rem;
+    height: 4rem;
+    display: flex;
+    border: rgb(63, 63, 63) 2px solid;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    background: url("/front-images/knapp_spritesheet10.png");
+    transition: background-position 0.2s steps(9);
+}
+
+nav > a:hover{
+    color: black;
+    /* animation: lightup 0.2s steps(9); */
+    background-position: -1440px;
+    cursor: pointer
+    
+}
+

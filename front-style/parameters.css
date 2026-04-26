@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --bg: hsl(0, 0%, 5%);
+    --main-bg: hsl(243, 12%, 10%);
+    --main-border: hsl(0, 0%, 20%);
+    --over-text: hsl(0, 0%, 40%)
+}

@@ -1,0 +1,30 @@
+
+
+@keyframes scroll_jump {
+    0%{
+        transform: translatey(0%);
+    }
+    50%{
+        transform: translatey(-35%)
+    }
+    60%{
+        transform: translatey(0%);
+    }
+}
+
+@keyframes colorshift {
+    0%{
+        color: white;
+        background: var(--main-bg);
+    }
+    100%{
+        color: black;
+        background: white;
+    }
+}
+
+@keyframes lightup {
+    
+    from{background-position: 0;}
+    to{background-position: -1440px;}
+}

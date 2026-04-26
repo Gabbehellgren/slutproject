@@ -1,0 +1,17 @@
+
+body{
+    margin: 0;
+    background-color: var(--bg);
+    color: white;
+    font-family: "Roboto";
+}
+
+
+.first-view{
+    height: 100vh;
+
+}
+
+main{
+    min-height: 100vh;
+}
