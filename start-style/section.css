@@ -1,0 +1,16 @@
+
+
+section{
+    background: linear-gradient(var(--rotation), var(--side-color), var(--center-color), var(--side-color));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-family: "Aldrich";
+    color: var(--title-color);
+
+}
+
