@@ -3,8 +3,19 @@
 
 :root{
     font-family: arial;
+    color: hsl(0, 0%, 90%);
 }
 
-h1{
+h1, h2, h3{
     font-family: helvetica;
+    color: hsl(0, 0%, 90%);
+}
+
+p, a{
+    color: hsl(0, 0%, 75%);
+}
+
+.title, .domain{
+    font-family: "Aldrich";
+    color: hsl(0, 0%, 90%);
 }

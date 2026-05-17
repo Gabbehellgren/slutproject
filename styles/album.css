@@ -1,0 +1,36 @@
+
+.album{
+    position: relative;
+    display: grid;
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 2px solid hsl(0, 0%, 30%)
+}
+.album img{
+    position: absolute;
+    height: 150%;
+    top: -35%;
+    left: 45%;
+    transform: translate(-50%)
+}
+
+.album div{
+    align-self: end;
+    z-index: 2;
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+    background: hsl(0, 0%, 20%);
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.images img{
+    max-width: 40%
+}

@@ -1,0 +1,81 @@
+:root{
+    --header-bg: hsl(0, 0%, 15%);
+    --main-bg: hsl(0, 0%, 5%);
+    --nav-bg: hsl(0, 0%, 10%);
+    --main-highlight-bg: hsl(0, 0%, 15%);
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header{
+    background: linear-gradient(45deg, var(--header-bg) 10%, hsl(0, 100%, 40%) 10% 90%, var(--header-bg) 90%);
+    text-align: center;
+
+}
+
+main{
+    background: var(--main-bg);
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+}
+
+nav{
+    background: var(--nav-bg);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: solid underline;
+}
+
+article{
+    background: radial-gradient(ellipse 50% 80% at 50% 100%, var(--main-highlight-bg), var(--main-bg));
+    justify-items: center;
+    padding-top: 5rem;
+}
+
+section{
+    background: var(--nav-bg);
+    border: 2px solid var(--header-bg);
+    width: 80%;
+    min-height: 50%;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 400px) {
+    
+}
+
+@media (min-width: 600px) {
+    header{
+        background: linear-gradient(45deg, var(--header-bg) 25%, hsl(0, 100%, 40%) 25% 75%, var(--header-bg) 75%);
+    }    
+}
+
+
+@media (min-width: 1000px) {
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+}
+
+@media (min-width: 250mm) {
+    section{
+        width: 210mm;
+    }
+}
