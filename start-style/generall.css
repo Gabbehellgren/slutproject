@@ -4,10 +4,10 @@
     --rotation: 90deg;
     --title-color: hsl(0, 0%, 90%);
 
-    --main-bg: hsl(0, 0%, 2%);
-    --nav-bg: hsl(0, 0%, 5%);
-    --nav-border: hsl(0, 0%, 8%);
-    --fg: hsl(0, 0%, 80%);
+    --main-bg: hsl(0, 0%, 5%);
+    --nav-bg: hsl(0, 0%, 10%);
+    --nav-border: hsl(0, 0%, 15%);
+    --fg: hsl(0, 0%, 90%);
 
     --button-bg: hsl(0, 100%, 40%)
 }
