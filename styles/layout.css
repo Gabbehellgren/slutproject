@@ -38,7 +38,7 @@ nav a:hover{
 }
 
 article{
-    background: radial-gradient(ellipse 50% 80% at 50% 100%, var(--main-highlight-bg), var(--main-bg));
+    background: radial-gradient(ellipse 50% 90% at 50% 100%, var(--main-highlight-bg), var(--main-bg));
     justify-items: center;
     padding-top: 5rem;
 }

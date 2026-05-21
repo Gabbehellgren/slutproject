@@ -4,11 +4,33 @@ section{
     background: linear-gradient(var(--rotation), var(--side-color), var(--center-color), var(--side-color));
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    flex-direction: column;
 }
 
 .title{
     color: var(--title-color);
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    transform: translateY(-100%);
+    top: 40%
 }
 
+section div{
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    padding-bottom: 1rem;
+    
+}
+section div p{
+    color: var(--fg);
+    margin-bottom: 0.5rem;
+}
+section div img{
+    height: 1.5rem;
+}

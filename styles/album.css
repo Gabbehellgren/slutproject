@@ -1,4 +1,13 @@
 
+.albums{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-auto-rows: auto;
+    gap: 2rem;
+}
+
+
 .album{
     position: relative;
     display: grid;
@@ -12,7 +21,7 @@
     position: absolute;
     height: 150%;
     top: -35%;
-    left: 45%;
+    left: 50%;
     transform: translate(-50%)
 }
 
@@ -21,7 +30,7 @@
     z-index: 2;
     padding-inline: 1rem;
     padding-bottom: 1rem;
-    background: hsl(0, 0%, 20%);
+    background: hsl(0, 0%, 15%);
 }
 
 .images{
@@ -33,4 +42,18 @@
 
 .images img{
     max-width: 40%
+}
+
+
+@media (max-width: 52rem){
+    .albums{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px){
+    .album{
+        width: 100%;
+        justify-self: center;
+    }
 }
