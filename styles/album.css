@@ -34,14 +34,17 @@
 }
 
 .images{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+    width: 90%;
+    justify-self: center;
+}
+.images_small{
+    display: none;
 }
 
-.images img{
-    max-width: 40%
+.images img {
+    max-height: 320px;
+    width: 100%;
+    object-fit: contain;
 }
 
 
@@ -55,5 +58,20 @@
     .album{
         width: 100%;
         justify-self: center;
+    }
+}
+
+@media (max-width: 250mm){
+    .images{
+        display: none;
+    }
+    .images_small{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem
+    }
+    .images_small img{
+        max-height: 320px;
+        width: 100%;
     }
 }

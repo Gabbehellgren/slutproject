@@ -3,11 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         
         <link rel="stylesheet" href="/styles/global.css">
         <link rel="stylesheet" href="/styles/layout.css">
         <link rel="stylesheet" href="/styles/copy.css">
         <link rel="stylesheet" href="/styles/album.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
         <title>Bohinj</title>
     </head>
@@ -27,14 +30,34 @@
                 <section>
                     <h1 style="text-align: center;">Bohinj</h1>
                     <div class="images">
-                        <img src="berg.jpg">
-                        <img src="castle.jpg">
-                        <img src="groupie.jpg">
-                        <img src="me.jpg">
-                        <img src="kyrka.jpg">
+                        <div><img src="berg.jpg"></div>
+                        <div><img src="castle.jpg"></div>
+                        <div><img src="groupie.jpg"></div>
+                        <div><img src="me.jpg"></div>
+                        <div><img src="kyrka.jpg"></div>
+                    </div>
+                    <div class="images_small">
+                        <div><img src="berg.jpg"></div>
+                        <div><img src="castle.jpg"></div>
+                        <div><img src="groupie.jpg"></div>
+                        <div><img src="me.jpg"></div>
+                        <div><img src="kyrka.jpg"></div>
                     </div>
                 </section>
             </article>
         </main>
+        <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.images').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1
+                });
+            });
+        </script>
     </body>
 </html>

@@ -24,8 +24,204 @@
             </nav>
             <article>
                 <section>
-                    <h1>Projects</h1>
-                    <a></a>
+                    <h1>SPRCH</h1>
+                    <p><strong>OBS!</strong> This is temporary — more projects and documentation will be added soon.</p>
+                    <p>Secure Protected Remote Control Hub</p>
+                    <p>By Oscar Hellgren TE23A – Ebersteinska Gymnasium</p>
+
+                    <h2 id="1-table-of-contents">1. Table of Contents</h2>
+                    <ol>
+                        <li><a href="#1-table-of-contents">Table of Contents</a></li>
+                        <li><a href="#2-background">Background</a></li>
+                        <li><a href="#3-description">Description</a></li>
+                        <li><a href="#4-target-audience">Target Audience</a></li>
+                        <li><a href="#5-functional-requirements">Functional Requirements</a></li>
+                        <li><a href="#6-technical-choices">Technical Choices</a></li>
+                    </ol>
+
+                    <h2 id="2-background">2. Background</h2>
+
+                    <h3>2.1 Original Idea</h3>
+                    <p>
+                        The project started as a networking experiment while testing ideas with AI-assisted programming.
+                        The first concept was an encrypted communication platform for remote collaboration and administration
+                        between computers on a local network.
+                    </p>
+
+                    <h3>2.2 Development Direction</h3>
+                    <p>
+                        During development, the project evolved into a remote administration system focused on learning
+                        cybersecurity, networking, server management, and software architecture.
+                        The goal became creating a secure tool for managing computers and servers remotely in a controlled environment.
+                    </p>
+
+                    <h3>2.3 Purpose of the Project</h3>
+                    <p>
+                        The system is designed as an educational and administrative platform for experimenting with:
+                    </p>
+
+                    <ul>
+                        <li>Remote system administration</li>
+                        <li>Secure client-server communication</li>
+                        <li>Network discovery and device management</li>
+                        <li>Authentication and encryption</li>
+                        <li>Command execution and automation</li>
+                        <li>Cybersecurity principles and infrastructure</li>
+                    </ul>
+
+                    <p>
+                        The project is intended only for authorized systems where the owner has given permission.
+                    </p>
+
+                    <h2 id="3-description">3. Description</h2>
+
+                    <h3>3.1 Overview</h3>
+                    <p>
+                        SPRCH consists of several modules that together form a remote administration platform.
+                        The system allows administrators to monitor devices, manage servers, automate tasks,
+                        and securely communicate with connected clients.
+                    </p>
+
+                    <h3>3.2 Server Agent</h3>
+                    <p>
+                        The server agent runs on managed devices and handles communication with the administration client.
+                        Its primary responsibilities include:
+                    </p>
+
+                    <ul>
+                        <li>Advertising its availability on the local network</li>
+                        <li>Accepting authenticated connections</li>
+                        <li>Handling secure communication</li>
+                        <li>Executing approved administrative commands</li>
+                        <li>Sending logs and status information</li>
+                    </ul>
+
+                    <p>
+                        The server agent can broadcast its hostname and status information using UDP discovery packets.
+                        This allows administrators to automatically discover active systems on the network.
+                    </p>
+
+                    <p>
+                        Security is a major focus of the project. Unauthorized or suspicious connections should be rejected automatically,
+                        and all commands are restricted to predefined administrative actions.
+                    </p>
+
+                    <h3>3.3 Administration Client</h3>
+                    <p>
+                        The administration client is used to discover and manage connected systems.
+                        The interface is CLI-based, inspired by Linux terminals, making it lightweight, efficient, and customizable.
+                    </p>
+
+                    <p>
+                        Through the client, administrators can:
+                    </p>
+
+                    <ul>
+                        <li>Discover available systems</li>
+                        <li>View connected devices</li>
+                        <li>Monitor status information</li>
+                        <li>Send administrative commands</li>
+                        <li>Receive logs and debug output</li>
+                    </ul>
+
+                    <h3>3.4 Encryption Module</h3>
+                    <p>
+                        To secure communication between systems, the project includes an encryption module for authentication
+                        and secure data transfer. The goal is to protect transmitted data and prevent unauthorized access.
+                    </p>
+
+                    <h3>3.5 Deployment Utility</h3>
+                    <p>
+                        A deployment utility is planned to simplify installation and setup of the server agent on authorized systems.
+                        The tool would automate configuration and service registration to make deployment easier in larger environments.
+                    </p>
+
+                    <h3>3.6 Ethical Perspective</h3>
+                    <p>
+                        The project is designed as an educational remote administration tool focused on cybersecurity,
+                        networking, and systems management.
+                    </p>
+
+                    <p>
+                        The system is intended only for legal and authorized environments where users have explicit permission
+                        to manage the connected devices. Security, transparency, and controlled access are important design goals.
+                    </p>
+
+                    <h2 id="4-target-audience">4. Target Audience</h2>
+
+                    <p>
+                        The project is aimed at:
+                    </p>
+
+                    <ul>
+                        <li>Students learning networking and cybersecurity</li>
+                        <li>Developers interested in client-server systems</li>
+                        <li>System administrators</li>
+                        <li>People interested in infrastructure and remote management tools</li>
+                    </ul>
+
+                    <h2 id="5-functional-requirements">5. Functional Requirements</h2>
+
+                    <h3>5.1 Server Agent</h3>
+                    <ol>
+                        <li>Advertise itself on the network.</li>
+                        <li>Accept authenticated client connections.</li>
+                        <li>Reject invalid or suspicious connections.</li>
+                        <li>Provide detailed debug and status output.</li>
+                        <li>Support remote shutdown and maintenance operations.</li>
+                    </ol>
+
+                    <h3>5.2 Administration Client</h3>
+                    <ol>
+                        <li>Provide a functional and aesthetic command-line interface.</li>
+                        <li>Discover and organize available systems.</li>
+                        <li>Connect securely to authorized devices.</li>
+                        <li>Send administrative commands and receive responses.</li>
+                    </ol>
+
+                    <h3>5.3 Encryption Module</h3>
+                    <ol>
+                        <li>Encrypt authentication credentials securely.</li>
+                        <li>Protect communication between client and server.</li>
+                        <li>Support future expansion with stronger encryption methods.</li>
+                    </ol>
+
+                    <h3>5.4 Deployment Utility</h3>
+                    <ol>
+                        <li>Simplify installation of the server agent.</li>
+                        <li>Configure required startup services automatically.</li>
+                        <li>Support deployment in test and lab environments.</li>
+                    </ol>
+
+                    <h2 id="6-technical-choices">6. Technical Choices</h2>
+
+                    <h3>6.1 Overview</h3>
+                    <ol>
+                        <li>
+                            Python is used as the primary programming language because of its flexibility
+                            and strong networking libraries.
+                        </li>
+                        <li>
+                            The socket module is used for network communication.
+                        </li>
+                    </ol>
+
+                    <h3>6.2 Server Agent</h3>
+                    <ol>
+                        <li>
+                            Uses UDP broadcast packets for lightweight device discovery on local networks.
+                        </li>
+                        <li>
+                            Uses TCP connections for reliable communication and command delivery.
+                        </li>
+                    </ol>
+
+                    <h3>6.3 Administration Client</h3>
+                    <ol>
+                        <li>
+                            Uses a CLI-based interface for speed, simplicity, and efficient workflow.
+                        </li>
+                    </ol>
                 </section>
             </article>
         </main>
